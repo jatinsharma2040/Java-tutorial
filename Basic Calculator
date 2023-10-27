@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class basic_calculator {
+    public static void main(String[] args) {
+        System.out.println("Enter your numbers");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println("First no. is "+ a);
+        int b = sc.nextInt();
+        System.out.println("Second no. is "+ b);
+        System.out.println("What do you want? +,-,*,/,%");
+        char sign = sc.next().charAt(0);
+        switch (sign){
+            case '+': 
+            // int c = a+b;
+            // System.out.println(c);
+            System.out.println(a+b);
+            break;
+            
+            case '-':
+            // c = a-b;
+            // System.out.println(c);
+            System.out.println(a-b);
+            break;
+
+            case '*':
+            // c = a*b;
+            // System.out.println(c);
+            System.out.println(a*b);
+            break;
+
+            case '/':
+            // c = b/a;
+            // System.out.println(c);
+            System.out.println(b/a);
+            break;
+
+            case '%':
+            // c = a%b;
+            // System.out.println(c);
+            System.out.println(a%b);
+            break;
+
+            default:
+            System.out.println("You entered a wrong choice");
+        }
+    }
+}
